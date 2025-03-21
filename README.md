@@ -1,7 +1,7 @@
 
 # URL Shortener
 A simple web-based application that shortens long URLs into shorter, easy-to-share links. This project is built using HTML, CSS, and JavaScript with the ability to store and retrieve shortened URLs.
-## Screenshots
+## Screenshots.  
 
 ![App Screenshot](https://ucarecdn.com/b6af6bfd-dbc6-4d85-8b02-1a1accf769b4/screencapturefileDNewfolder2indexhtml2024100516_57_48.png)
 
