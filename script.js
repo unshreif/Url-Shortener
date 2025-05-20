@@ -24,7 +24,6 @@ themeToggle.addEventListener('click', toggleTheme);
 clearHistoryBtn.addEventListener('click', clearHistory);
 customSlug.addEventListener('input', validateCustomSlug);
 
-// Theme Functions
 function toggleTheme() {
     isDarkMode = !isDarkMode;
     localStorage.setItem('darkMode', isDarkMode);
@@ -36,7 +35,6 @@ function updateTheme() {
     themeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
 }
 
-// History Functions
 function clearHistory() {
     if (urlHistoryData.length === 0) {
         showNotification('History is already empty', 'error');
@@ -51,7 +49,6 @@ function clearHistory() {
     }
 }
 
-// Custom URL Functions
 function validateCustomSlug() {
     const slug = customSlug.value.trim();
     const isValid = /^[a-zA-Z0-9-_]+$/.test(slug);
@@ -59,7 +56,6 @@ function validateCustomSlug() {
     return isValid;
 }
 
-// URL Shortening Functions
 async function handleShorten() {
     const url = urlInput.value.trim();
     const customSlugValue = customSlug.value.trim();
