@@ -1,4 +1,3 @@
-/* Modern UI styles for URL Shortener */
 :root {
     --primary-color: #4f46e5;
     --primary-hover: #4338ca;
@@ -46,7 +45,6 @@ body {
     flex-direction: column;
 }
 
-/* Navbar */
 .navbar {
     background-color: var(--card-background);
     padding: 1rem 2rem;
@@ -76,7 +74,6 @@ body {
     background-color: var(--border-color);
 }
 
-/* Main Content */
 .main-content {
     flex: 1;
     padding: 2rem;
@@ -104,7 +101,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* URL Form */
 .url-form-container {
     background-color: var(--card-background);
     padding: 2rem;
@@ -174,7 +170,6 @@ input[type="text"]:focus {
     transform: translateY(0);
 }
 
-/* Features Section */
 .features-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -210,7 +205,6 @@ input[type="text"]:focus {
     color: var(--text-light);
 }
 
-/* History Section */
 .history-section {
     background-color: var(--card-background);
     padding: 2rem;
@@ -306,7 +300,6 @@ input[type="text"]:focus {
     color: var(--text-color);
 }
 
-/* Notification */
 .notification {
     position: fixed;
     bottom: 2rem;
@@ -330,7 +323,6 @@ input[type="text"]:focus {
     background-color: var(--error-color);
 }
 
-/* QR Code */
 .qr-code-container {
     text-align: center;
     margin-top: 1rem;
@@ -368,7 +360,6 @@ input[type="text"]:focus {
     transform: translateY(-2px);
 }
 
-/* Custom URL Section */
 .custom-url-section {
     margin-top: 1rem;
     display: none;
@@ -379,7 +370,6 @@ input[type="text"]:focus {
     animation: slideDown 0.3s ease;
 }
 
-/* Animations */
 @keyframes slideDown {
     from {
         opacity: 0;
@@ -411,7 +401,6 @@ input[type="text"]:focus {
     }
 }
 
-/* Nav Actions */
 .nav-actions {
     display: flex;
     align-items: center;
@@ -435,7 +424,6 @@ input[type="text"]:focus {
     background-color: var(--border-color);
 }
 
-/* History Actions */
 .history-actions {
     display: flex;
     gap: 1rem;
