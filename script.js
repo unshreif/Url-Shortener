@@ -1,4 +1,3 @@
-// DOM Elements
 const urlInput = document.getElementById('urlInput');
 const shortenBtn = document.getElementById('shortenBtn');
 const resultContainer = document.getElementById('result');
@@ -9,19 +8,12 @@ const themeToggle = document.querySelector('.theme-toggle');
 const clearHistoryBtn = document.getElementById('clearHistory');
 const customSlug = document.getElementById('customSlug');
 
-// API Configuration
-const RAPIDAPI_KEY = '285636c500msh12b84f5a9d710b8p1dd115jsn9e73910313cf';
-const RAPIDAPI_HOST = 'url-shortener-service.p.rapidapi.com';
-
-// State
 let urlHistoryData = JSON.parse(localStorage.getItem('urlHistory')) || [];
 let isDarkMode = localStorage.getItem('darkMode') === 'true';
 
-// Initialize
 updateUrlHistory();
 updateTheme();
 
-// Event Listeners
 shortenBtn.addEventListener('click', handleShorten);
 urlInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
@@ -90,8 +82,8 @@ async function handleShorten() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
-                'x-rapidapi-host': RAPIDAPI_HOST,
-                'x-rapidapi-key': RAPIDAPI_KEY
+                'x-rapidapi-host': config.RAPIDAPI_HOST,
+                'x-rapidapi-key': config.RAPIDAPI_KEY
             },
             body: `url=${encodeURIComponent(url)}${customSlugValue ? `&custom=${customSlugValue}` : ''}`
         });
@@ -162,7 +154,6 @@ function addToHistory(originalUrl, shortenedUrl) {
         timestamp: new Date().toISOString()
     });
 
-    // Keep only last 10 URLs
     if (urlHistoryData.length > 10) {
         urlHistoryData.pop();
     }

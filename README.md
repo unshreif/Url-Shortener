@@ -39,12 +39,22 @@ git clone https://github.com/yourusername/Url-Shortener.git
 cd Url-Shortener
 ```
 
-2. Open `index.html` in your web browser or use a local server.
+2. Create a `config.js` file in the root directory with your API keys:
+```javascript
+const config = {
+    RAPIDAPI_KEY: 'your-rapidapi-key-here',
+    RAPIDAPI_HOST: 'url-shortener-service.p.rapidapi.com'
+};
+```
 
 3. Get your RapidAPI key:
    - Sign up at [RapidAPI](https://rapidapi.com)
    - Subscribe to the URL Shortener Service
-   - Replace the `RAPIDAPI_KEY` in `script.js` with your key
+   - Copy your API key and paste it in the `config.js` file
+
+4. Open `index.html` in your web browser or use a local server.
+
+> **Note**: The `config.js` file is included in `.gitignore` to protect your API keys. Never commit this file to version control.
 
 ## Usage
 
@@ -77,6 +87,13 @@ cd Url-Shortener
 - Light and dark mode
 - Theme preference persistence
 - Smooth transitions between themes
+
+## Security
+
+- API keys are stored in a separate configuration file
+- Configuration file is excluded from version control
+- API requests are made server-side to protect API keys
+- Input validation and sanitization for all user inputs
 
 ## Contributing
 
