@@ -12,9 +12,6 @@ A modern, feature-rich URL shortener web application that allows users to create
 - **Copy to Clipboard**: One-click copy of shortened URLs
 - **Responsive Design**: Works seamlessly on all devices
 
-## Screenshots.  
-
-![App Screenshot](https://ucarecdn.com/b6af6bfd-dbc6-4d85-8b02-1a1accf769b4/screencapturefileDNewfolder2indexhtml2024100516_57_48.png)
 
 
 ## Demo
@@ -35,7 +32,7 @@ You can access the live demo [here](https://url-shortener-theta-silk.vercel.app/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Url-Shortener.git
+git clone https://github.com/unshreif/Url-Shortener.git
 cd Url-Shortener
 ```
 
