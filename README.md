@@ -99,10 +99,3 @@ Feel free to submit issues and enhancement requests!
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-**GitHub** : [@unshreif](https://github.com/unshreif)
-
-**Linkedin** : [unshreif](https://www.linkedin.com/in/unshreif/)
-
